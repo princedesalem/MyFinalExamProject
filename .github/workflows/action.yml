@@ -1,0 +1,10 @@
+name: Simple Check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Display a message
+        run: echo 'GitHub Action executed successfully!'
